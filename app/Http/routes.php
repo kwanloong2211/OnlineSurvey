@@ -11,13 +11,14 @@
 |
 */
 
-
-Route::get('about', 'PagesController@about');
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('mosti', function () {
     return view('mosti');
 });
-
 Route::get('info', function () {
     return view('info');
+
 });
